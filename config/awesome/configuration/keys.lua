@@ -97,12 +97,11 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "focus right", group = "client" }),
 
 	--- Resize focused client
-	awful.key({ mod, ctrl }, "k", function(c)
-		helpers.client.resize_client(client.focus, "up")
-	end, { description = "resize to the up", group = "client" }),
-	awful.key({ mod, ctrl }, "j", function(c)
-		helpers.client.resize_client(client.focus, "down")
-	end, { description = "resize to the down", group = "client" }),
+	awful.key({ mod , ctrl }, "j", function () awful.screen.focus_relative( 1) end,
+	{description = "focus the next screen", group = "screen"}),
+	awful.key({ mod , ctrl }, ";", function () awful.screen.focus_relative(-1) end,
+	{description = "focus the previous screen", group = "screen"}),
+
 	awful.key({ mod, ctrl }, "h", function(c)
 		helpers.client.resize_client(client.focus, "left")
 	end, { description = "resize to the left", group = "client" }),
@@ -219,12 +218,12 @@ client.connect_signal("request::default_keybindings", function()
 			helpers.client.move_client(c, "up")
 		end),
 		awful.key({ mod, shift }, "j", function(c)
-			helpers.client.move_client(c, "down")
-		end),
-		awful.key({ mod, shift }, "h", function(c)
 			helpers.client.move_client(c, "left")
 		end),
 		awful.key({ mod, shift }, "l", function(c)
+			helpers.client.move_client(c, "down")
+		end),
+		awful.key({ mod, shift }, ";", function(c)
 			helpers.client.move_client(c, "right")
 		end),
 
@@ -307,6 +306,10 @@ client.connect_signal("request::default_keybindings", function()
 				c:activate({ raise = true, context = "key.unminimize" })
 			end
 		end, { description = "restore minimized", group = "client" }),
+
+		-- Swap Focused to Monitor
+		awful.key({ mod }, "o", function (c) c:move_to_screen()               end,
+		{description = "move to screen", group = "client"}),
 
 		--- Keep on top
 		awful.key({ mod }, "p", function(c)

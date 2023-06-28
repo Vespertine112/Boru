@@ -319,8 +319,8 @@ client.connect_signal("request::default_keybindings", function()
 		end),
 
 		--- Close window
-		awful.key({ mod }, "q", function()
-			client.focus:kill()
+		awful.key({ alt }, "F4", function(c)
+			c:kill()
 		end),
 
 		--- Center window

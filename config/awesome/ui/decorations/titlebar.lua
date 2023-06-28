@@ -10,7 +10,7 @@ local decorations = require("ui.decorations")
 --- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 --- Disable this if using `picom` to round your corners
---- decorations.enable_rounding()
+-- decorations.enable_rounding()
 
 --- Tabbed
 local bling = require("modules.bling")
@@ -21,6 +21,9 @@ client.connect_signal("request::titlebars", function(c)
 	if c.requests_no_titlebar then
 		return
 	end
+
+	-- Comment line to enable titlebars
+	do return end
 
 	awful
 		.titlebar(c, { position = "top", size = dpi(36), font = beautiful.font_name .. "Medium 10", bg = beautiful.transparent })

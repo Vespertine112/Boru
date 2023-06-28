@@ -157,7 +157,7 @@ theme.music_accent = theme.lighter_black
 --- ░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀░░▀░░▀▀▀
 
 --- Wallpapers
-theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/wave.png")
+theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/space_float.png")
 --- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/yoru-dots.png")
 --- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/mountain.jpg")
 --- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/rocks.jpg")
@@ -240,7 +240,7 @@ theme.layoutlist_shape_selected = helpers.ui.rrect(theme.border_radius)
 theme.layoutlist_bg_selected = theme.widget_bg
 
 --- Gaps
-theme.useless_gap = dpi(2)
+theme.useless_gap = dpi(16)
 
 --- Systray
 theme.systray_icon_size = dpi(20)

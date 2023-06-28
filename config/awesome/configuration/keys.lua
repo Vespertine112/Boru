@@ -57,7 +57,7 @@ awful.keyboard.append_global_keybindings({
 	awful.key({ mod, ctrl }, "q", awesome.quit, { description = "quit awesome", group = "WM" }),
 
 	--- Show help
-	awful.key({ mod }, "F1", hotkeys_popup.show_help, { description = "show Help", group = "WM" }),
+	awful.key({ mod }, "s", hotkeys_popup.show_help, { description = "show Help", group = "WM" }),
 
 	--- Client
 	--- ~~~~~~
@@ -67,14 +67,14 @@ awful.keyboard.append_global_keybindings({
 		bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus up", group = "client" }),
 	awful.key({ mod }, "j", function()
-		awful.client.focus.bydirection("down")
-		bling.module.flash_focus.flashfocus(client.focus)
-	end, { description = "focus down", group = "client" }),
-	awful.key({ mod }, "h", function()
 		awful.client.focus.bydirection("left")
 		bling.module.flash_focus.flashfocus(client.focus)
-	end, { description = "focus left", group = "client" }),
+	end, { description = "focus down", group = "client" }),
 	awful.key({ mod }, "l", function()
+		awful.client.focus.bydirection("down")
+		bling.module.flash_focus.flashfocus(client.focus)
+	end, { description = "focus left", group = "client" }),
+	awful.key({ mod }, ";", function()
 		awful.client.focus.bydirection("right")
 		bling.module.flash_focus.flashfocus(client.focus)
 	end, { description = "focus right", group = "client" }),
@@ -116,10 +116,10 @@ awful.keyboard.append_global_keybindings({
 	awful.key({ mod, ctrl }, "Down", function(c)
 		helpers.client.resize_client(client.focus, "down")
 	end, { description = "resize to the down", group = "client" }),
-	awful.key({ mod, ctrl }, "Left", function(c)
+	awful.key({ mod, alt }, "Left", function(c)
 		helpers.client.resize_client(client.focus, "left")
 	end, { description = "resize to the left", group = "client" }),
-	awful.key({ mod, ctrl }, "Right", function(c)
+	awful.key({ mod, alt }, "Right", function(c)
 		helpers.client.resize_client(client.focus, "right")
 	end, { description = "resize to the right", group = "client" }),
 
@@ -339,9 +339,9 @@ end)
 --- ~~~~~~
 awful.keyboard.append_global_keybindings({
 	--- Set tilling layout
-	awful.key({ mod }, "s", function()
-		awful.layout.set(awful.layout.suit.tile)
-	end, { description = "set tile layout", group = "layout" }),
+	-- awful.key({ mod }, "s", function()
+	-- 	awful.layout.set(awful.layout.suit.tile)
+	-- end, { description = "set tile layout", group = "layout" }),
 
 	--- Set floating layout
 	awful.key({ mod, shift }, "s", function()
@@ -391,8 +391,8 @@ awful.keyboard.append_global_keybindings({
 --- Move through workspaces
 --- ~~~~~~~~~~~~~~~~~~~~~~~
 awful.keyboard.append_global_keybindings({
-	awful.key({ mod, alt }, "Left", awful.tag.viewprev, { description = "view previous", group = "tags" }),
-	awful.key({ mod, alt }, "Right", awful.tag.viewnext, { description = "view next", group = "tags" }),
+	awful.key({ mod, ctrl }, "Left", awful.tag.viewprev, { description = "view previous", group = "tags" }),
+	awful.key({ mod, ctrl }, "Right", awful.tag.viewnext, { description = "view next", group = "tags" }),
 	awful.key({
 		modifiers = { mod },
 		keygroup = "numrow",

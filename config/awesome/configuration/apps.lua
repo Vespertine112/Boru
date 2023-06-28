@@ -6,17 +6,17 @@ return {
 	--- Default Applications
 	default = {
 		--- Default terminal emulator
-		terminal = "wezterm start --always-new-process",
+		terminal = "konsole",
 		--- Default music client
-		music_player = "wezterm start --class music ncmpcpp",
+		music_player = "spotify-launcher",
 		--- Default text editor
 		text_editor = "wezterm start nvim",
 		--- Default code editor
 		code_editor = "code",
 		--- Default web browser
-		web_browser = "firefox",
+		web_browser = "brave",
 		--- Default file manager
-		file_manager = "nautilus",
+		file_manager = "dolphin",
 		--- Default network manager
 		network_manager = "wezterm start nmtui",
 		--- Default bluetooth manager

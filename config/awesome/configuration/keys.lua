@@ -29,7 +29,7 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "open terminal", group = "app" }),
 
 	--- App launcher
-	awful.key({ mod }, "d", function()
+	awful.key({ alt }, "'", function()
 		awful.spawn.with_shell(apps.default.app_launcher)
 	end, { description = "open app launcher", group = "app" }),
 
@@ -198,6 +198,10 @@ awful.keyboard.append_global_keybindings({
 		awful.spawn.easy_async_with_shell(apps.utils.area_screenshot, function() end)
 	end, { description = "take a area screenshot", group = "hotkeys" }),
 
+	awful.key({ mod, shift }, "s", function()
+		awful.spawn.with_shell(apps.utils.area_screenshot, function() end)
+	end, { description = "take a area screenshot", group = "hotkeys" }),
+
 	--- Lockscreen
 	awful.key({ mod, alt }, "l", function()
 		lock_screen_show()
@@ -347,9 +351,9 @@ awful.keyboard.append_global_keybindings({
 	-- end, { description = "set tile layout", group = "layout" }),
 
 	--- Set floating layout
-	awful.key({ mod, shift }, "s", function()
-		awful.layout.set(awful.layout.suit.floating)
-	end, { description = "set floating layout", group = "layout" }),
+	-- awful.key({ mod, shift }, "s", function()
+	-- 	awful.layout.set(awful.layout.suit.floating)
+	-- end, { description = "set floating layout", group = "layout" }),
 
 	--- Layout machi
 	awful.key({ mod }, ".", function()

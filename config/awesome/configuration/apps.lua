@@ -32,7 +32,7 @@ return {
 		--- Fullscreen screenshot
 		full_screenshot = utils_dir .. "screensht full",
 		--- Area screenshot
-		area_screenshot = utils_dir .. "screensht area",
+		area_screenshot =  "flameshot gui",
 		--- Color Picker
 		color_picker = utils_dir .. "xcolor-pick",
 	},

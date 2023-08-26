@@ -240,7 +240,7 @@ theme.layoutlist_shape_selected = helpers.ui.rrect(theme.border_radius)
 theme.layoutlist_bg_selected = theme.widget_bg
 
 --- Gaps
-theme.useless_gap = dpi(16)
+theme.useless_gap = dpi(10)
 
 --- Systray
 theme.systray_icon_size = dpi(20)

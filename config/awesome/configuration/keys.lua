@@ -28,7 +28,12 @@ awful.keyboard.append_global_keybindings({
 		awful.spawn(apps.default.terminal)
 	end, { description = "open terminal", group = "app" }),
 
-	--- App launcher
+	--- App launcher - bind 1
+	awful.key({ alt }, "`", function()
+		awful.spawn.with_shell(apps.default.app_launcher)
+	end, { description = "open app launcher", group = "app" }),
+
+	--- App launcher - bind 2
 	awful.key({ alt }, "'", function()
 		awful.spawn.with_shell(apps.default.app_launcher)
 	end, { description = "open app launcher", group = "app" }),

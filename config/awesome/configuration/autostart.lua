@@ -21,8 +21,8 @@ local function autostart_apps()
 	helpers.run.run_once_grep("nm-applet")
 
 	-- Set the refreshrate
-	-- awful.spawn.with_shell("xrandr --output DP-2 --mode 2560x1440 --rate 144")
-	-- awful.spawn.with_shell("xrandr --output DP-4 --mode 2560x1440 --rate 144")
+	awful.spawn.with_shell("xrandr --output DP-2 --mode 2560x1440 --rate 144")
+	awful.spawn.with_shell("xrandr --output DP-4 --mode 2560x1440 --rate 144")
 	
 end
 

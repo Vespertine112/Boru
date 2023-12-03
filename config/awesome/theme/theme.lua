@@ -159,7 +159,8 @@ theme.music_accent = theme.lighter_black
 --- Wallpapers
 -- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/space_float.png")
 -- - theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/yoru-dots.png")
-theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/mountain.jpg")
+-- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/mountain.jpg")
+theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/color_forest.jpg")
 --- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/rocks.jpg")
 
 --- Image Assets

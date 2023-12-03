@@ -4,9 +4,9 @@ local config_dir = filesystem.get_configuration_dir()
 local helpers = require("helpers")
 
 local function autostart_apps()
-	--- Compositor
-	helpers.run.check_if_running("picom", nil, function()
-		awful.spawn("picom --wm-support awesome  --config /home/vespertine/.config/picom/picom.conf" , false)
+	--- Compositor [Compfy] 
+	helpers.run.check_if_running("compfy", nil, function()
+		awful.spawn("compfy --config /home/vespertine/.config/compfy/compfy.conf" , false)
 	end)
 	--- Music Server
 	helpers.run.run_once_pgrep("mpd")

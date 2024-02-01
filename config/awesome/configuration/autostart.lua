@@ -6,7 +6,7 @@ local helpers = require("helpers")
 local function autostart_apps()
 	--- Compositor [Compfy] 
 	helpers.run.check_if_running("compfy", nil, function()
-		awful.spawn("compfy --config /home/vespertine/.config/compfy/compfy.conf" , false)
+		awful.spawn("compfy -b --config /home/vespertine/.config/compfy/compfy.conf" , false)
 	end)
 	--- Music Server
 	helpers.run.run_once_pgrep("mpd")

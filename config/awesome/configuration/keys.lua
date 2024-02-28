@@ -279,7 +279,7 @@ client.connect_signal("request::default_keybindings", function()
 		end, { description = "toggle titlebar", group = "client" }),
 
 		--- Toggle floating
-		awful.key({ mod, ctrl }, "space", awful.client.floating.toggle),
+		awful.key({ mod, ctrl }, "space", awful.client.floating.toggle, {description="Toggle floating", group="client"}),
 
 		--- Toggle fullscreen
 		awful.key({ mod }, "f", function()
@@ -492,9 +492,9 @@ client.connect_signal("request::default_mousebindings", function()
 		end),
 		awful.button({ mod }, 1, function(c)
 			c:activate({ context = "mouse_click", action = "mouse_move" })
-		end),
+		end, {description="Move Floating Window", group="client"}),
 		awful.button({ mod }, 3, function(c)
 			c:activate({ context = "mouse_click", action = "mouse_resize" })
-		end),
+		end, {description="Resize Floating Window", group="client"}),
 	})
 end)

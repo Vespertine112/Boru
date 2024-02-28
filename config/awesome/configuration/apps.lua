@@ -6,7 +6,7 @@ return {
 	--- Default Applications
 	default = {
 		--- Default terminal emulator
-		terminal = "konsole",
+		terminal = "alacritty",
 		--- Default music client
 		music_player = "spotify-launcher",
 		--- Default text editor

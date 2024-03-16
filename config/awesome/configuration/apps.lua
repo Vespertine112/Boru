@@ -16,7 +16,7 @@ return {
 		--- Default web browser
 		web_browser = "brave",
 		--- Default file manager
-		file_manager = "dolphin",
+		file_manager = "nemo",
 		--- Default network manager
 		network_manager = "wezterm start nmtui",
 		--- Default bluetooth manager
@@ -32,7 +32,7 @@ return {
 		--- Fullscreen screenshot
 		full_screenshot = utils_dir .. "screensht full",
 		--- Area screenshot
-		area_screenshot =  "flameshot gui",
+		area_screenshot = "flameshot gui",
 		--- Color Picker
 		color_picker = utils_dir .. "xcolor-pick",
 	},

@@ -59,7 +59,7 @@ theme.color3 = "#de8f78"
 theme.color11 = "#e79881"
 
 --- Blue
-theme.color4 = "#6791c9"
+theme.color4 = "#C874B2"
 theme.color12 = "#709ad2"
 
 --- Magenta

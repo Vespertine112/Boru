@@ -17,7 +17,7 @@ local icons = require("icons")
 --- ░▀░░░▀▀▀░▀░▀░░▀░░▀▀▀
 
 --- Ui Fonts
-theme.font_name = "Roboto "
+theme.font_name = "Roboto"
 theme.font = theme.font_name .. "Medium 10"
 
 --- Icon Fonts
@@ -74,6 +74,13 @@ theme.color14 = "#70b8ca"
 theme.color7 = "#e4e6e7"
 theme.color15 = "#f2f4f5"
 
+theme.space_c1 = "#210535"
+theme.space_c2 = "#430d4b"
+theme.space_c3 = "#7b337d"
+theme.space_c4 = "#c874b2"
+theme.space_c5 = "#f5d5e0"
+theme.space_c6 = "#da8a8b"
+
 --- Background Colors
 theme.bg_normal = theme.black
 theme.bg_focus = theme.black
@@ -113,7 +120,7 @@ theme.release_event = "#ffffff" .. "10"
 theme.widget_bg = "#1b1d1e"
 
 --- Titlebars
-theme.titlebar_enabled = true
+theme.titlebar_enabled = false
 theme.titlebar_bg = theme.black
 theme.titlebar_fg = theme.white
 
@@ -157,11 +164,7 @@ theme.music_accent = theme.lighter_black
 --- ░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀░░▀░░▀▀▀
 
 --- Wallpapers
--- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/space_float.png")
--- - theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/yoru-dots.png")
--- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/mountain.jpg")
 theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/boris-baldinger.jpg")
---- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/rocks.jpg")
 
 --- Image Assets
 theme.pfp = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/pfp.png")
@@ -184,14 +187,14 @@ theme.layout_machi = icons.machi
 theme.icon_theme = "WhiteSur-dark"
 
 --- Borders
-theme.border_width = 0
+theme.border_width = 4
 theme.oof_border_width = 0
 theme.border_color_marked = theme.titlebar_bg
-theme.border_color_active = theme.titlebar_bg
+theme.border_color_active = theme.space_c4
 theme.border_color_normal = theme.titlebar_bg
-theme.border_color_new = theme.titlebar_bg
-theme.border_color_urgent = theme.titlebar_bg
-theme.border_color_floating = theme.titlebar_bg
+theme.border_color_new = theme.space_c1
+theme.border_color_urgent = theme.space_c3
+theme.border_color_floating = theme.space_c2
 theme.border_color_maximized = theme.titlebar_bg
 theme.border_color_fullscreen = theme.titlebar_bg
 

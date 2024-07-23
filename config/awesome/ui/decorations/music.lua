@@ -207,10 +207,10 @@ local function volume_control()
 	volume:buttons(gears.table.join(
 		-- Scroll - Increase or decrease volume
 		awful.button({}, 4, function()
-			awful.spawn.with_shell("mpc volume +5")
+			awful.spawn.with_shell("mpc volume +1")
 		end),
 		awful.button({}, 5, function()
-			awful.spawn.with_shell("mpc volume -5")
+			awful.spawn.with_shell("mpc volume -1")
 		end)
 	))
 

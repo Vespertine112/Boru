@@ -22,8 +22,8 @@ local function autostart_apps()
 	helpers.run.run_once_grep("variety")
 
 	-- Set the refreshrate
-	awful.spawn.with_shell("xrandr --output DP-2 --mode 2560x1440 -r 143.91")
-	awful.spawn.with_shell("xrandr --output DP-4 --mode 2560x1440 -r 143.91")
+	awful.spawn.with_shell("xrandr --output DP-0 --primary --right-of DP-2 --mode 2560x1440 -r 143.91 --auto")
+	awful.spawn.with_shell("xrandr --output DP-2 --mode 2560x1440 -r 143.91 --auto")
 end
 
 autostart_apps()

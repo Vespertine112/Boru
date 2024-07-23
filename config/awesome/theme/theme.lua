@@ -80,6 +80,7 @@ theme.space_c3 = "#7b337d"
 theme.space_c4 = "#c874b2"
 theme.space_c5 = "#f5d5e0"
 theme.space_c6 = "#da8a8b"
+theme.space_c7 = "#5220F1" -- This is kind of a purple-blue
 
 --- Background Colors
 theme.bg_normal = theme.black
@@ -191,7 +192,7 @@ theme.border_width = 4
 theme.oof_border_width = 0
 theme.border_color_marked = theme.titlebar_bg
 theme.border_color_active = theme.space_c4
-theme.border_color_normal = theme.titlebar_bg
+theme.border_color_normal = theme.space_c7
 theme.border_color_new = theme.space_c1
 theme.border_color_urgent = theme.space_c3
 theme.border_color_floating = theme.space_c2
